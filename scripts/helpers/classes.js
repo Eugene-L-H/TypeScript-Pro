@@ -1,21 +1,20 @@
 export class Task {
-  constructor(id, name, description, dueDate, priority, project) {
-    this.id = id;
-    this.name = name;
-    this.description = description;
-    this.dueDate = dueDate;
-    this.priority = priority;
-    this.project = project;
-    this.checked = false;
-  }
+    constructor(id, name, description, dueDate, priority, project) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.dueDate = dueDate;
+        this.priority = priority;
+        this.project = project;
+        this.checked = false;
+    }
 }
-
 export class Project {
-  constructor(id, name, description, deadline, priority) {
-    this.id = id;
-    this.name = name;
-    this.description = description;
-    this.deadline = deadline;
-    this.priority = priority;
-  }
+    constructor(id, name, description, deadline, priority) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.deadline = deadline;
+        this.priority = priority;
+    }
 }
