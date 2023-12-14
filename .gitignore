@@ -1,0 +1,9 @@
+# Ignore all JavaScript files.
+*.js
+*.js.map 
+
+# Ignore TypeScript comilation artifacts.
+*.tsbuildinfo
+
+# Allow TypeScript Files.
+!*.ts
