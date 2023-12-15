@@ -1,9 +1,11 @@
+import { Task, Project } from "./classes";
+
 /**
  *
  * @param {array} Accepts either the taskArray, or projectsArray.
  * @returns {array} Returns the array sorted by dueDate.
  */
-export function sortArrayByDate(array) {
+export function sortArrayByDate(array: Task[]): Task[] {
   // Sorts the array by date.
   let sortedArray = array.sort((a, b) => {
     if (a.dueDate > b.dueDate) {
@@ -17,7 +19,12 @@ export function sortArrayByDate(array) {
   return sortedArray;
 }
 
-export function sortArrayByPriority(array) {
+/**
+ *
+ * @param {array} Accepts either the taskArray, or projectsArray.
+ * @returns {array} Returns the array sorted by priority, High to Low.
+ */
+export function sortArrayByPriority(array: Project[]): Project[] {
   // Sorts the array by priority, High to Low.
   let sortedArray = array.sort((a, b) => {
     if (a.priority > b.priority) {
