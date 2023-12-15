@@ -13,7 +13,8 @@ export class Task {
     description: string,
     dueDate: string,
     priority: number,
-    project: string
+    project: string,
+    checked: boolean
   ) {
     this.id = id;
     this.name = name;
