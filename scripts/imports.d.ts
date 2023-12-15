@@ -37,7 +37,7 @@ import {
   closePopup,
   closePopupButton,
   blurMainToggle
-} from "./helpers/popup.js";
+} from "./helpers/popup.jts";
 
 import { updateWeather } from "./helpers/weather.js";
 
