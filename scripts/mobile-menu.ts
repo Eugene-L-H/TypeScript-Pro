@@ -260,7 +260,7 @@ function mobileMenuAddProject(): void {
       blurMainToggle(); // Counter the blurMainToggle in closePopupButton.
 
       // Add functionality to the submit project button.
-      submitProjectButton(Project);
+      submitProjectButton();
       mobileMenuClose(); // Close the mobile menu.
     });
   }

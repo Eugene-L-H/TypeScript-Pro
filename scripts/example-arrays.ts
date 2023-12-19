@@ -1,16 +1,21 @@
 import { Task, Project } from "./imports.js";
 
-export function populateExampleArray(type: string, numberOfObjects: number) {
-  const exampleArray = [];
+export function populateExampleArray(
+  type: string,
+  numberOfObjects: number
+): Array<Task | Project> {
+  const exampleArray: Array<Task | Project> = [];
 
   for (let i = 0; i < numberOfObjects; i++) {
     // Populate the array with tasks, or projects, according ot type argument.
-    const object = type === "task" ? exampleTask(i) : exampleProject(i);
-    console.log("object", object);
+    const object: Task | Project =
+      type === "task" ? exampleTask(i) : exampleProject(i);
     exampleArray.push(object);
   }
 
-  return exampleArray;
+  return type === "task"
+    ? (exampleArray as Task[])
+    : (exampleArray as Project[]);
 }
 
 function exampleTask(iteration: number): Task {

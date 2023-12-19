@@ -19,7 +19,9 @@ import {
   tasksStorageToDisplay,
   displayTasks,
   taskDateButtons,
-  taskPopupFunctionality
+  taskPopupFunctionality,
+  taskCardFunctionality,
+  taskDOMobject
 } from "./tasks.js";
 
 import {
@@ -65,6 +67,8 @@ export {
   displayTasks,
   taskDateButtons,
   taskPopupFunctionality,
+  taskCardFunctionality,
+  taskDOMobject,
   populateLocalProjectsArray,
   submitProjectButton,
   displayProject,
