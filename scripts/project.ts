@@ -4,7 +4,7 @@ import {
   updateProjectsArray,
   closePopup,
   tasksArray,
-  populateExampleArray,
+  populateProjectArray,
   blurMainToggle,
   sanitizeInput,
   taskPopupFunctionality,
@@ -22,9 +22,7 @@ export function populateLocalProjectsArray(): void {
 
     // If local storage is empty, populate with example projects.
   } else {
-    const projects: (Project | Task)[] = populateExampleArray("project", 5);
-    console.log("projects", projects);
-    updateProjectsArray(projects);
+    updateProjectsArray(populateProjectArray(5));
     location.reload();
   }
 }

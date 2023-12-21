@@ -14,7 +14,7 @@ export class Task {
     dueDate: string,
     priority: number,
     project: string,
-    checked: boolean
+    checked: boolean = false
   ) {
     this.id = id;
     this.name = name;
@@ -22,7 +22,7 @@ export class Task {
     this.dueDate = dueDate;
     this.priority = priority;
     this.project = project;
-    this.checked = false;
+    this.checked = checked;
   }
 }
 

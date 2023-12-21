@@ -14,7 +14,7 @@ export let projectsArray: Project[] = [];
  * @param {Array} array - An array of task objects to be stored in localStorage.
  */
 export function updateTasksArray(array: Task[]) {
-  tasksArray = array;
+  tasksArray = array as Task[];
 
   // Push new array to local storage.
   localStorage.setItem("tasksArray", JSON.stringify(tasksArray));

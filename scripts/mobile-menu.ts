@@ -116,28 +116,28 @@ function mobileMenuDates(): void {
 
   if (todayButton) {
     todayButton.addEventListener("click", () => {
-      displayTasks("today", true);
+      displayTasks("today");
       mobileMenuClose();
     });
   }
 
   if (weekButton) {
     weekButton.addEventListener("click", () => {
-      displayTasks("week", true);
+      displayTasks("week");
       mobileMenuClose();
     });
   }
 
   if (monthButton) {
     monthButton.addEventListener("click", () => {
-      displayTasks("month", true);
+      displayTasks("month");
       mobileMenuClose();
     });
   }
 
   if (yearButton) {
     yearButton.addEventListener("click", () => {
-      displayTasks("year", true);
+      displayTasks("year");
       mobileMenuClose();
     });
   }

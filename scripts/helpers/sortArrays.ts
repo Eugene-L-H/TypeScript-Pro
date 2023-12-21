@@ -24,7 +24,7 @@ export function sortArrayByDate(array: Task[]): Task[] {
  * @param {array} Accepts either the taskArray, or projectsArray.
  * @returns {array} Returns the array sorted by priority, High to Low.
  */
-export function sortArrayByPriority(array: Project[]): Project[] {
+export function sortArrayByPriority(array: Task[]): Task[] {
   // Sorts the array by priority, High to Low.
   let sortedArray = array.sort((a, b) => {
     if (a.priority > b.priority) {

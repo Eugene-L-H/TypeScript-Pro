@@ -7,12 +7,12 @@ import {
 } from "./helpers/state.js";
 
 // For populating tasks/projects array with examples.
-import { populateExampleArray } from "./example-arrays.js";
+import { populateTaskArray, populateProjectArray } from "./example-arrays.ts";
 
 // Dark mode toggle.
-import { darkMode } from "./helpers/dark-mode.js";
+import { darkMode } from "./helpers/dark-mode.ts";
 
-import { menuFunctionality } from "./mobile-menu.js";
+import { menuFunctionality } from "./mobile-menu.ts";
 
 // For populating content area with tasks.
 import {
@@ -30,29 +30,29 @@ import {
   displayProject,
   projectDisplayTasks,
   addNewProjectPopup
-} from "./project.js";
+} from "./project.ts";
 
-import { Project, Task } from "./helpers/classes.js";
+import { Project, Task } from "./helpers/classes.ts";
 
 // Functions for handling the popups.
 import {
   closePopup,
   closePopupButton,
   blurMainToggle
-} from "./helpers/popup.jts";
+} from "./helpers/popup.ts";
 
-import { updateWeather } from "./helpers/weather.js";
+import { updateWeather } from "./helpers/weather.ts";
 
 // Functions for sorting arrays by due date, and priority.
-import { sortArrayByDate, sortArrayByPriority } from "./helpers/sortArrays.js";
+import { sortArrayByDate, sortArrayByPriority } from "./helpers/sortArrays.ts";
 
 import {
   isDueInTimeFrame,
   getFormattedDate,
   isThisYear
-} from "./helpers/compare-dates.js";
+} from "./helpers/compare-dates.ts";
 
-import { sanitizeInput } from "./helpers/sanitizeInput.js";
+import { sanitizeInput } from "./helpers/sanitizeInput.ts";
 
 export {
   projectsArray,
@@ -60,7 +60,8 @@ export {
   updateProjectsArray,
   updateTasksArray,
   deleteIconFunctionality,
-  populateExampleArray,
+  populateTaskArray,
+  populateProjectArray,
   darkMode,
   menuFunctionality,
   tasksStorageToDisplay,
