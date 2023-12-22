@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: agenda_pro_db # Change this to your preferred database name
+      POSTGRES_USER: agenda_pro_user # Change this to your preferred username
+      POSTGRES_PASSWORD: agenda_pro_password # Change this to your preferred password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d # Mount an init directory to initialize the database
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

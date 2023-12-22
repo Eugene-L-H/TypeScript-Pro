@@ -1,12 +1,3 @@
-INSERT INTO projects (name, description, deadline, priority)
-VALUES
-    ('Wellness Expedition', 'Description for Wellness Expedition', '2024-03-31', 1),
-    ('Lifestyle Navigator', 'Description for Lifestyle Navigator', '2024-06-30', 2),
-    ('Adventure Blueprint', 'Description for Adventure Blueprint', '2024-05-15', 3),
-    ('Work/Life Balance', 'Description for Work/Life Balance', '2024-04-10', 1),
-    ('Personal Growth', 'Description for Personal Growth', '2024-07-20', 2)
-;
-
 INSERT INTO tasks (name, description, due_date, priority, project_id, checked)
 VALUES
     -- Tasks with current day's date
@@ -33,4 +24,3 @@ VALUES
     ('Create a vision board', 'Maecenas fermentum consequat mi. Donec fermentum.', CURRENT_DATE + INTERVAL '1 YEAR', 2, (FLOOR(RANDOM() * 5) + 1), FALSE),
     ('Sign up for a creative writing workshop', 'Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec.', CURRENT_DATE + INTERVAL '1 YEAR', 3, (FLOOR(RANDOM() * 5) + 1), FALSE)
 ;
-
